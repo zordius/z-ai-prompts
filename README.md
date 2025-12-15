@@ -31,5 +31,7 @@ The following prompts are available:
 
 ## Example
 
+```
 > npx z-ai-prompts japanese-chinese-translation '我認為這個工具不錯, 可以測試一下.'
 このツールは良いと思います。試してみましょう。
+```
