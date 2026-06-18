@@ -26,9 +26,11 @@ FILE_PATH="${PROJECT_ROOT}/${1}/gemini.md"
 
 if command -v gemini &> /dev/null
 then
-    # If gemini is found, read the content of the specified file and pipe it to gemini
+    # If gemini is found, read the content of the specified file and pass it to gemini
     if [ -f "$FILE_PATH" ]; then
-        echo -e "$(cat "$FILE_PATH")\n${@:2}" | gemini
+        PROMPT="$(cat "$FILE_PATH")
+${*:2}"
+        gemini --skip-trust --approval-mode plan -p "$PROMPT"
     elif [ -z "$1" ]; then
         echo "Error: No argument provided. Please specify a prompt."
         list_possible_arguments
