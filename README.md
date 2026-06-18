@@ -21,11 +21,9 @@ The following prompts are available:
 - `japan-fiber`
 - `refine-system-prompt`
 - `ocr`
-- `github`
 - `japanese-chinese-translation`
 - `enhance-photo`
 - `generate-icon`
-- `create-tool`
 - `refine-markdown`
 - `research-product-chinese`
 
