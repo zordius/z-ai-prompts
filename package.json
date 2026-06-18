@@ -24,6 +24,10 @@
   },
   "homepage": "https://github.com/zordius/z-ai-prompts#readme",
   "devDependencies": {
-    "markdownlint-cli2": "^0.18.1"
+    "markdownlint-cli2": "^0.22.1"
+  },
+  "overrides": {
+    "js-yaml": "4.2.0",
+    "markdown-it": "14.2.0"
   }
 }
